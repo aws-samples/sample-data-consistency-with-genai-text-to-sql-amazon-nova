@@ -8,7 +8,7 @@ This solution enables non-technical users to query organizational data using nat
 
 ## Architecture 
 
-![alt text](<image (27).png>)
+![alt text](/images/architecture.png)
 
 
 ## Key Features
