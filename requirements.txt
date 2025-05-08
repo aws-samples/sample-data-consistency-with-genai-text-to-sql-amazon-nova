@@ -1,6 +1,6 @@
 boto3
 pandas
-streamlit==1.23.0
+streamlit==1.37.0
 botocore==1.34.107
 mysql-connector-python 
 pyodbc

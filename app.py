@@ -176,7 +176,7 @@ def main():
     # process starts here!
     secret_values = get_secret()
     db_name=secret_values['dbname']
-    db_view_name = 'vw_BookingSummary_h' ## option - you can make this dynamic by adding a new field in secrets manager as view_name and retrieve it in the code by using db_view_name=secret_values['view_name']
+    db_view_name = 'vw_sales' ## option - you can make this dynamic by adding a new field in secrets manager as view_name and retrieve it in the code by using db_view_name=secret_values['view_name']
     
     conn = connect_to_db()
     cursor = conn.cursor()
@@ -199,7 +199,6 @@ def main():
             cursor = conn.cursor()
             cursor.execute(query)
             result = cursor.fetchall()
-            columns = pd.DataFrame(np.matrix(cursor.description))[0]
             
     except Exception as e:
             st.error(f"Error fetching view data: {e}")
