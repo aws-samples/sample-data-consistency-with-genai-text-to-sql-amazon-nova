@@ -22,13 +22,13 @@ This solution enables non-technical users to query organizational data using nat
 Before getting started, make sure you have the following:
 
 - **AWS Account** 
-- **AWS CLI**: Ensure AWS CLI is configured with valid credentials
-  - AWS CLI. If missing install latest AWS CLI from [here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
-   ```shell
-   aws --version
-   ```
-- **AWS CLI configure** - Follow AWS [documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) to configure basic settings that the AWS Command Line Interface (AWS CLI) uses to interact with AWS.
-- **Amazon Bedrock Access**: Ensure Amazon Bedrock is [enabled](https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html) in your AWS account
+- **AWS CLI**: Make sure AWS CLI is installed and configured with valid credentials.
+   - **AWS CLI Installation** - Follow AWS [documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) to install AWS Command Line Interface (AWS CLI) and check the version with following command.
+      ```shell
+      aws --version
+      ```
+   - **AWS CLI configure** - Follow AWS [documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) to configure basic settings that the AWS Command Line Interface (AWS CLI) uses to interact with AWS.
+- **Amazon Bedrock Access**: Make sure Amazon Bedrock is [enabled](https://docs.aws.amazon.com/bedrock/latest/userguide/setting-up.html) in your AWS account
 - **Model access**: Obtain [access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html) to Amazon Nova Lite and Pro LLMs
 - **Database System**: Sample code uses [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (version 2016 or later) On-Premises, but this solution also supports:
    - [Amazon RDS](https://aws.amazon.com/rds/) (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server) 
@@ -74,7 +74,7 @@ Before getting started, make sure you have the following:
    ```
 
 2. **Load Sample Dataset in Database**
-   - Ensure you have created a secret in AWS Secrets Manager named "mssql_secrets" as per the prerequisites
+   - Make sure you have created a secret in AWS Secrets Manager named "mssql_secrets" as per the prerequisites
    - If name of your secrets manager is different than "mssql_secrets", update the code under folder sample-data-consistency-with-genai-text-to-sql-amazon-nova in:
      - app.py (line 37)
      - load_data.py (line 22)
@@ -139,7 +139,7 @@ To avoid incurring future costs:
 
 ## Additional Resources
 
-For a more comprehensive example of a Text-to-SQL solution built on Amazon Bedrock, explore the [bedrock-agent-txt2sql GitHub repository](https://github.com/aws-samples/bedrock-agent-txt2sql). This open-source project demonstrates how to use Amazon Bedrock and Amazon Nova LLM to build a robust text-to-SQL agent that can generate complex queries, self-correct, and query diverse data sources.
+For a more comprehensive example of a Text-to-SQL solution built on Amazon Bedrock, explore the [Bedrock Agent GitHub](https://github.com/aws-samples/bedrock-agent-txt2sql). This open-source project demonstrates how to use Amazon Bedrock and Amazon Nova LLM to build a robust text-to-SQL agent that can generate complex queries, self-correct, and query diverse data sources.
 
 ## License
 
