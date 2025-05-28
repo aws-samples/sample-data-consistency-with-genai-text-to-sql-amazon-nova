@@ -1,4 +1,4 @@
-# Data Consistency with GenAI: The Case for Text-to-SQL Solution Using Amazon Nova
+# Build a Text-to-SQL solution for data consistency in generative AI using Amazon Nova
 
 This repository contains the code and resources for implementing a Text-to-SQL solution using Amazon Nova LLMs as described in the AWS Blog post of the same name.
 
